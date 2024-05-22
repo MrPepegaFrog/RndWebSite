@@ -1,0 +1,52 @@
+@import '~variables';
+
+.carousel {
+  padding-left: 300px;
+  padding-right: 300px;
+
+  @media (max-width: $laptop) {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  @media (max-width: $tablet-s) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.content {
+  margin-top: 84px;
+
+  @media (max-width: $tablet) {
+    margin-top: 40px;
+  }
+}
+
+.nameBlock {
+  display: flex;
+  align-items: center;
+  padding-left: 300px;
+  padding-right: 300px;
+  font-size: 30px;
+
+  @media (max-width: $laptop) {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  @media (max-width: $tablet-s) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

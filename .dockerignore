@@ -1,0 +1,13 @@
+.idea/
+ /dist/
+/build/
+/node_modules/
+.husky
+.stylelintrc.json
+.eslintrc.cjs
+.eslintignore
+.gitignore
+.lintstagedrc.json
+.prettierrc.json
+.env.dev
+.env.stage

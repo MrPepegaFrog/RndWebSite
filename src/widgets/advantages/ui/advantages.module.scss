@@ -1,0 +1,21 @@
+@import '~variables';
+
+.titleBlock {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.contentBlock {
+  margin-top: 40px;
+
+  @media (max-width: $tablet) {
+    margin-top: 50px;
+  }
+
+  @media (max-width: $tablet-s) {
+    margin-top: 42px;
+  }
+}

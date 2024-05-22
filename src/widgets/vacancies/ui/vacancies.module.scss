@@ -1,0 +1,10 @@
+@import '~variables';
+
+.no_vacancies {
+  font-size: 24px;
+  margin-top: 40px;
+
+  @media (max-width: $tablet-s) {
+    font-size: 18px;
+  }
+}

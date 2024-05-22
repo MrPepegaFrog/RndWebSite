@@ -1,0 +1,53 @@
+@import '~variables';
+
+.historyCard {
+  display: flex;
+  flex-direction: column;
+  width: 536px;
+  height: 640px;
+  border-radius: 16px;
+  padding: 32px;
+  margin: 0 12px;
+
+  @media (max-width: $tablet) {
+    font-size: 64px;
+    padding: 20px;
+    width: 258px;
+    height: 480px;
+  }
+
+  @media (max-width: $tablet-s) {
+    height: 400px;
+  }
+}
+
+.title {
+  font-size: 128px;
+  line-height: 110%;
+
+  @media (max-width: $tablet) {
+    font-size: 64px;
+  }
+}
+
+.subtitleWrapper {
+  margin-top: auto;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: 16px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+    margin-top: 12px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

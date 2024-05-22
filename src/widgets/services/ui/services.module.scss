@@ -1,0 +1,26 @@
+@import '~variables';
+
+.service {
+  height: 480px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 24px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: $laptop-s) {
+    height: 384px;
+  }
+
+  @media (max-width: $tablet-s) {
+    height: 300px;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

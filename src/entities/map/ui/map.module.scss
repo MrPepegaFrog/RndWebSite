@@ -1,0 +1,11 @@
+@import '~variables';
+
+.map {
+  border-radius: 24px;
+  overflow: hidden;
+  height: 648px;
+
+  @media (max-width: $tablet-s) {
+    height: 243px;
+  }
+}

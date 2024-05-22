@@ -1,0 +1,83 @@
+@import '~variables';
+
+.titleBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-s) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.search {
+  width: 70%;
+
+  @media (max-width: $tablet-l) {
+    width: 65%;
+    margin-top: 52px;
+  }
+
+  @media (max-width: $tablet-s) {
+    width: 100%;
+    margin-top: 52px;
+  }
+}
+
+.contentBlock {
+  margin-top: 40px;
+
+  @media (max-width: $tablet) {
+    margin-top: 50px;
+  }
+
+  @media (max-width: $tablet-s) {
+    margin-top: 42px;
+  }
+}
+
+.titleInfo {
+  font-size: 20px;
+  text-wrap: nowrap;
+
+  @media (max-width: $tablet-s) {
+    font-size: 14px;
+  }
+}
+
+.subtitleInfo {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 140%;
+
+  @media (max-width: $tablet-s) {
+    font-size: 16px;
+    line-height: 120%;
+  }
+}
+
+.contentInfo {
+  width: 100%;
+
+  & > :first-child {
+    width: calc(30% - 24px);
+  }
+
+  & > :last-child {
+    width: 70%;
+
+    @media (max-width: $tablet-l) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '~variables';
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.titleNotFound {
+  color: var(--corporative-color);
+  font-size: 320px;
+
+  @media (max-width: $laptop) {
+    font-size: 280px;
+  }
+
+  @media (max-width: $tablet-s) {
+    font-size: 148px;
+  }
+}
+
+.textNotFound {
+  color: var(--secondary-background-color);
+  font-size: 30px;
+  text-align: center;
+
+  @media (max-width: $laptop) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $tablet-s) {
+    font-size: 18px;
+  }
+}

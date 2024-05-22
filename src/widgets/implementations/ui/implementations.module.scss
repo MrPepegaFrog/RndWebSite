@@ -1,0 +1,68 @@
+@import '~variables';
+
+.cardContainer {
+  @media (max-width: $tablet) {
+    margin-top: 50px;
+  }
+
+  @media (max-width: $tablet-s) {
+    margin-top: 42px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+
+  @media (max-width: $tablet-s) {
+    display: block;
+    margin: 0;
+  }
+}
+
+.card {
+  height: 252px;
+  margin: 0 12px 24px;
+  width: calc(100% / 3 - 24px);
+
+  &:nth-last-of-type(-n + 3) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $laptop-s) {
+    &:nth-of-type(odd) {
+      width: calc(45% - 24px);
+    }
+
+    &:nth-of-type(even) {
+      width: calc(55% - 24px);
+    }
+  }
+
+  @media (max-width: $tablet) {
+    &:nth-of-type(even),
+    &:nth-of-type(odd) {
+      width: calc(50% - 24px);
+    }
+  }
+
+  @media (max-width: $tablet-s) {
+    height: 160px;
+    margin-bottom: 24px;
+    margin-left: 0;
+
+    &:nth-of-type(even),
+    &:nth-of-type(odd) {
+      width: 100%;
+    }
+
+    &:nth-last-of-type(-n + 3) {
+      margin-bottom: 24px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

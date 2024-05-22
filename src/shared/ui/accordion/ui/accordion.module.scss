@@ -1,0 +1,160 @@
+@import '~variables';
+
+.accordionBlock-subtitle {
+  margin-bottom: 48px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 0;
+  }
+}
+
+.accordionItem-title {
+  font-size: 32px;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.6;
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: $tablet) {
+    opacity: 1;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+  }
+}
+
+.accordionItem-title_active {
+  opacity: 1;
+}
+
+.accordionItem-title-text {
+  width: 90%;
+
+  @media (max-width: $tablet) {
+    font-size: 20px;
+  }
+}
+
+.accordionText-title {
+  font-size: 24px;
+  transition: all 0.8s;
+
+  @media (max-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.accordionText-title_active {
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.accordionText-content {
+  font-size: 16px;
+  line-height: 140%;
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
+}
+
+.accordionList-content {
+  font-size: 16px;
+  margin-bottom: 16px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 14px;
+  }
+}
+
+.accordionList {
+  list-style-type: none;
+  line-height: 140%;
+
+  .accordionList-item {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.marker {
+  min-width: 5px;
+  min-height: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+  margin-top: 7px;
+}
+
+.border {
+  border-bottom: 1px solid white;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media (max-width: $mobile) {
+    padding-top: 16px;
+  }
+}
+
+.horCrossLine {
+  width: 25px;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 10px;
+  border-radius: 2px;
+
+  @media (max-width: $mobile) {
+    width: 20px;
+    height: 4px;
+    top: 8px;
+  }
+}
+
+.vertCrossLine {
+  width: 5px;
+  height: 25px;
+  background: white;
+  position: absolute;
+  left: 10px;
+  border-radius: 2px;
+
+  @media (max-width: $mobile) {
+    width: 4px;
+    height: 20px;
+    left: 8px;
+  }
+}
+
+.cross {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  transition: transform 0.5s;
+}
+
+.crossAnim {
+  transform: rotate(45deg);
+}
+
+.accordion_content {
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+.accordion_content_active {
+  opacity: 1;
+  max-height: 1000px;
+  transition: all 0.5s;
+}

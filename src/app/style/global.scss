@@ -1,0 +1,55 @@
+@import './fonts';
+
+:root {
+  // цвета
+  --plashka-color: #f0f2f4;
+  --corporative-color: #1d55a6;
+  --card-color: #1b1c1d;
+  --secondary-background-color: #fcfcfc;
+  --card-gray-color: #c5c9ce;
+  --gradient-color: linear-gradient(90deg, #9ec3ff 0%, #c5bcff 100%, #c5bcff 100%);
+  --primary-background-color: #1b1c1d;
+  --header-color: #232425;
+  --partner-color: #1f2123;
+  --block-color: #282e36;
+  --border-color: #57595c;
+  --error-color: rgb(215 15 15);
+}
+
+* {
+  font-family: Montserrat, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--card-color);
+  color: var(--secondary-background-color);
+}
+
+#root {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: var(--secondary-background-color);
+  }
+}
+
+.NoScroll {
+  overflow: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition:
+    background-color 0s 600000s,
+    color 0s 600000s !important;
+}

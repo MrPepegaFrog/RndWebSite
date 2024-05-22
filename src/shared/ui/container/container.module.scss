@@ -1,0 +1,67 @@
+@import '~variables';
+
+.container {
+  margin-top: 128px;
+
+  @media (max-width: $laptop-s) {
+    margin-top: 64px;
+  }
+
+  @media (max-width: $tablet-s) {
+    margin-top: 40px;
+  }
+}
+
+.padding_container {
+  padding-left: 300px;
+  padding-right: 300px;
+
+  @media (max-width: $laptop) {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  @media (max-width: $tablet-s) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+
+  & > :first-child {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  & > :last-child {
+    width: 70%;
+
+    @media (max-width: $tablet-l) {
+      width: 65%;
+    }
+
+    @media (max-width: $tablet) {
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    @media (max-width: $tablet-s) {
+      margin-top: 42px;
+    }
+  }
+}

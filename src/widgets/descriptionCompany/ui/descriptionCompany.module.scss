@@ -1,0 +1,72 @@
+@import '~variables';
+
+.title {
+  font-size: 36px;
+  color: var(--secondary-background-color);
+
+  @media (max-width: $tablet) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $tablet-s) {
+    font-size: 18px;
+    margin-top: 24px;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-s) {
+    flex-direction: column-reverse;
+  }
+}
+
+.employer {
+  @media (max-width: $tablet-s) {
+    margin-top: 0;
+  }
+}
+
+.line {
+  margin-top: 48px;
+
+  @media (max-width: $laptop-s) {
+    margin-top: 40px;
+  }
+
+  @media (max-width: $tablet-s) {
+    margin-top: 24px;
+  }
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  color: var(--secondary-background-color);
+
+  @media (max-width: $laptop-s) {
+    margin-top: 40px;
+  }
+
+  @media (max-width: $tablet-s) {
+    margin-top: 24px;
+  }
+}
+
+.missionTitle {
+  font-size: 30px;
+  line-height: 130%;
+}
+
+.missionDescription {
+  font-size: 24px;
+  margin-top: 32px;
+  line-height: 130%;
+
+  @media (max-width: $tablet-s) {
+    margin-top: 24px;
+  }
+}

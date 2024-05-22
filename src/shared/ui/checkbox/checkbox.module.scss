@@ -1,0 +1,59 @@
+@import '~variables';
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxButton {
+  position: relative;
+  margin-right: 20px;
+
+  @media (max-width: $laptop-s) {
+    margin-right: 15px;
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 14L8.23309 16.4248C8.66178 16.7463 9.26772 16.6728 9.60705 16.2581L18 6" stroke="%23CCD2E3" stroke-width="3" stroke-linecap="round"/></svg>');
+  display: none;
+}
+
+.checkbox {
+  border: solid 3px #ccd2e3;
+  background: transparent;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  &:checked ~ .checkmark {
+    display: block;
+  }
+}
+
+.size_m {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+.error_border {
+  border: 3px solid var(--error-color);
+}
+
+.checkboxText {
+  font-size: 20px;
+  line-height: 140%;
+
+  @media (max-width: $tablet-s) {
+    font-size: 14px;
+  }
+}

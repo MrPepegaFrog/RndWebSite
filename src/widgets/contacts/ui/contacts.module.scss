@@ -1,0 +1,92 @@
+@import '~variables';
+
+.description {
+  margin-bottom: 80px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $tablet-s) {
+    margin-bottom: 40px;
+  }
+}
+
+.article {
+  margin-top: 40px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+
+    @media (max-width: $tablet-l) {
+      justify-content: initial;
+    }
+
+    @media (max-width: $tablet) {
+      justify-content: space-between;
+    }
+
+    @media (max-width: $tablet-s) {
+      justify-content: initial;
+    }
+  }
+}
+
+.nameArticle {
+  color: var(--secondary-background-color);
+  font-size: 20px;
+
+  @media (max-width: $tablet-s) {
+    font-size: 14px;
+  }
+}
+
+.contentArticle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-s) {
+    display: block;
+    justify-content: initial;
+  }
+}
+
+.contentText {
+  color: var(--secondary-background-color);
+  font-size: 32px;
+  margin-top: 20px;
+
+  @media (max-width: $laptop) {
+    font-size: 28px;
+  }
+
+  @media (max-width: $tablet-s) {
+    font-size: 16px;
+  }
+}
+
+.tel {
+  margin-right: 42px;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-l) {
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.mail {
+  margin-bottom: 20px;
+}
+
+.noWrap {
+  text-wrap: nowrap;
+}

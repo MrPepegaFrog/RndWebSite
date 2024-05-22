@@ -1,0 +1,41 @@
+@import '~variables';
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  border-radius: 24px;
+  background-color: var(--block-color);
+  width: 100%;
+
+  @media (max-width: $tablet-s) {
+    padding: 16px;
+  }
+}
+
+.input {
+  background-color: transparent;
+  padding: 0;
+  margin-left: 25px;
+  width: 100%;
+
+  & input {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--secondary-background-color);
+  }
+
+  @media (max-width: $tablet-s) {
+    font-size: 14px;
+  }
+
+  &::-webkit-search-cancel-button {
+    appearance: none;
+    display: none;
+  }
+}
+
+.logo {
+  width: 33px;
+  height: 33px;
+}

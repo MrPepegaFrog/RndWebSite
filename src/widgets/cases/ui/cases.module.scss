@@ -1,0 +1,91 @@
+@import '~variables';
+
+.icon {
+  min-height: 33px;
+  min-width: 33px;
+  margin-right: 3px;
+
+  @media (max-width: $tablet) {
+    min-height: 24px;
+    min-width: 24px;
+  }
+}
+
+.caseContainer {
+  margin: 40px -12px 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-s) {
+    display: block;
+    margin: 42px 0 0;
+  }
+}
+
+.caseColumnContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.case {
+  height: 480px;
+  width: calc(50% - 24px);
+  margin: 0 12px 24px;
+
+  @media (max-width: $laptop-s) {
+    height: 384px;
+  }
+
+  @media (min-width: $tablet) {
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+      background-color: var(--corporative-color);
+    }
+  }
+
+  @media (max-width: $tablet-s) {
+    width: 100%;
+    margin: 0 0 20px;
+    height: 300px;
+  }
+}
+
+.caseColumn {
+  width: 100%;
+  flex-grow: 1;
+
+  @media (max-width: $tablet) {
+    width: calc(50% - 24px);
+    margin: 0 12px 24px;
+  }
+
+  @media (max-width: $tablet-s) {
+    width: 100%;
+  }
+}
+
+.button {
+  margin-top: 24px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 16px;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--secondary-background-color);
+
+  @media (max-width: $tablet) {
+    margin-top: 20px;
+    padding: 16px;
+    font-size: 14px;
+  }
+}

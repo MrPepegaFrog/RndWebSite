@@ -1,0 +1,38 @@
+@import '~variables';
+
+.PartnerCard {
+  border: solid 1px var(--secondary-background-color);
+  border-radius: 24px;
+  width: 312px;
+  height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+  opacity: 0.6;
+  transition: 0.2s;
+  padding: 45px;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: $tablet-l) {
+    width: 234px;
+    height: 146px;
+    margin: 0 9px;
+    padding: 35px;
+  }
+
+  @media (max-width: $tablet-s) {
+    width: 140px;
+    height: 82px;
+    padding: 16px;
+  }
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

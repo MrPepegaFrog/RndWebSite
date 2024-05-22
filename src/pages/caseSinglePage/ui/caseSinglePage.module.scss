@@ -1,0 +1,17 @@
+@import '~variables';
+
+.case {
+  height: 480px;
+  margin-bottom: 24px;
+  width: 100%;
+
+  @media (max-width: $laptop-s) {
+    height: 384px;
+  }
+
+  @media (max-width: $tablet-s) {
+    margin-bottom: 20px;
+    height: 300px;
+    width: 100%;
+  }
+}
